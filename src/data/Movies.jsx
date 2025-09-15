@@ -206,7 +206,7 @@ const MoviesData = [
     year: 2015,
     genre: "Romantic Thriller",
     description: "Shankar’s ambitious film with Vikram’s transformative acting and AR Rahman’s hit music.",
-    poster: "/i.jpeg",
+    poster: "/I.jpeg",
   },
   {
     id: 36,
