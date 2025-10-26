@@ -1,29 +1,50 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  color: #222;
+  background: #ffffff;
+  color: #000000;
+}
+.header {
+  background: linear-gradient(135deg, #212121, #FFFFFF, #212121);
+  text-align: center;
+  padding: 8px;
+  position: relative;
+  overflow: hidden;
 }
 
-.header {
-  background: #222;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
+.header::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  animation: lightMove 6s infinite alternate;
+}
+
+@keyframes lightMove {
+  0% { transform: translate(-10%, -10%); }
+  100% { transform: translate(10%, 10%); }
+}
+
+.header h1 {
+  color: #000000;
+  font-family: 'Cinzel Decorative', 'Playfair Display', serif;
+  font-size: 3rem;
+  letter-spacing: 1px;
 }
 
 .search-bar {
   display: flex;
   justify-content: center;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 .search-bar input {
   padding: 0.5rem;
-  width: 250px;
-  margin-right: 0.5rem;
+  width: 300px;
+  margin-right: 1rem;
 }
-
 .section-title {
   text-align: center;
   margin-top: 2rem;
@@ -186,8 +207,8 @@ button:hover {
 .movie-card img {
   width: 183px;
   height: 275px;
-  object-fit: cover;   /* Keeps aspect ratio and fills the box */
-  border-radius: 12px; /* Optional: rounded corners */
+  object-fit: cover;  
+  border-radius: 12px; 
   display: block;
   margin: 0 auto;
 }

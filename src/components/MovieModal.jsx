@@ -1,5 +1,5 @@
 import React from "react";
-import ReviewForm from "./ReviewForm";
+import Review from "./Review";
 
 export default function MovieModal({ movie, onClose, toggleWatchlist, isInWatchlist }) {
   return (
@@ -14,7 +14,7 @@ export default function MovieModal({ movie, onClose, toggleWatchlist, isInWatchl
         <button onClick={() => toggleWatchlist(movie)}>
           {isInWatchlist ? "Remove from Watchlist" : "Add to Watchlist"}
         </button>
-        <ReviewForm movieId={movie.id} />
+        <Review movieId={movie.id} />
       </div>
     </div>
   );

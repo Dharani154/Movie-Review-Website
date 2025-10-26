@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function ReviewForm({ movieId }) {
+export default function Review({ movieId }) {
   const [reviews, setReviews] = useState(
     JSON.parse(localStorage.getItem(`reviews-${movieId}`)) || []
   );
