@@ -71,10 +71,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 ### Snapshots of Website
-![App Screenshot](./assets/First.png)
+[App Screenshot](./assets/First.png)
 
 ![App Screenshot](./assets/Second.png)
 
 ![App Screenshot](./assets/Third.png)
 
 ![App Screenshot](./assets/Fourth.png)
+<p align="center">
+  <img src="./assets/First.png" width="45%" />
+  <img src="./assets/Second.png" width="45%" />
+  <img src="./assets/Third.png" width="45%" />
+  <img src="./assets/Fourth.png" width="45%" />
+</p>
+
